@@ -1,78 +1,32 @@
-<!doctype html>
-<html>
-
-<head>
-  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <title>I CAN'T KNEEL.</title>
-    <meta charset="utf-8">
-    <style>
-
-    .menu .hide{display:none; }
-    .mail  {text-align:center;}
-
-
-    </style>
-</head>
-
-<body>
- <div>
-  <ui class="title">
-    <a href="welcome.html">I CAN'T KNEEL.</a>
-  </ui>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<style>
+    .menu a{cursor:pointer;}
+    .menu .hide{display:none;}
+</style>
 
 <div>
-  <ui class="menu">
-    <a>menu</a>
-      <ul class="hide" >
-       <li>outcomes</li>
-        <ul>
-         <li>printed_matter</li>
-         <li>graphics</li>
-         <li>live_action</li>
-         <li>UI/UX</li>
-         <li>experimental</li>
-         <li>photography</li>
-         <li>motion_graphics</li>
-         <li>ART+TECH</li>
-        </ul>
-       <li>practice</li>
-        <ul>
-          <li>graphics</li>
-          <li>live_action</li>
-          <li>motion_graphics</li>
-          <li>typography</li>
-          <li>processing</li>
-          <li>technology</li>
-          <li>color_correction</li>
-          <li>3D</li>
-        </ul>
-       <li>introduction</a>
-         <ul>
-           <li>can't_kneel</li>
-           <li>contact</li>
-         </ul>
-       <li>year</li>
-        <ul>
-         <li>2017 or before </li>
-        </ul>
+    <li class="menu">
+      <a><img src="" alt="상위메뉴이미지1"/></a>
+      <ul class="hide">
+          <li>메뉴1-1</li>
+          <li>메뉴1-2</li>
+          <li>메뉴1-3</li>
+          <li>메뉴1-4</li>
+          <li>메뉴1-5</li>
+          <li>메뉴1-6</li>
       </ul>
-  </li>
+    </li>
 </div>
 
-
 <script>
- $(document).ready(function(){
+$(document).ready(function(){
       $(".menu>a").click(function(){
-         var submenu = $(this).next("ul");
-         if( submenu.is(":visible") ){
-         submenu.slideUp();
-         }else{
-         submenu.slideDown();
-         }
+          var submenu = $(this).next("ul");
+          if( submenu.is(":visible") ){
+              submenu.slideUp();
+          }else{
+              submenu.slideDown();
+          }
       });
   });
 </script>
-
-</body>
-
-</html>
